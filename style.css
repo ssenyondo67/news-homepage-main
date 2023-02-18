@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Inter",;
+    src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+    src: url("./assets/fonts/static/Inter-Bold.ttf");
+    src: url("./assets/fonts/static/Inter-ExtraBold.ttf");
+    src: url("./assets/fonts/static/Inter-Regular.ttf");
+  }
+:root{
+    
+    --color-p-red:hsl(5, 85%, 63%);
+   
+    --color-p-orage:hsl(35, 77%, 62%);
+   
+  
+    --gradient-1: linear-gradient(to top,hsl(241,81%,54%) 20%,hsl(252,100%,67%));
+    --gradient-circle: linear-gradient(to top,hsla(241,72%,40%,1),hsla(256,72%,20%,.8));
+    --color-s-white:hsl(36, 100%, 99%);
+   
+    --color-s-dark:hsl(236, 13%, 42%);
+    --color-s-gray:hsl(233, 8%, 79%);
+    --color-s-blue:hsl(240, 100%, 5%);
+  
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+body{
+    font-size: 15px;
+}
+.text__red{
+    color:var(--color-p-red)
+}
+.bg__red{
+    background: var(--color-p-red);
+}
+.hover__red:hover{
+    color: var(--color-p-red);
+}
+.text__orange{
+    color: var(--color-p-orage);
+
+}
+.hover__orange:hover{
+    color: var(--color-p-orage);
+}
+.text__light{
+    color: var(--color-s-gray);
+}
+.text__blue{
+   
+    color: var(--color-s-blue);
+}
+.bg__blue{
+    background: var(--color-s-blue);
+}
+.bg__white{
+        background: var(--color-s-white);
+}
+.btn:hover{
+    background: var(--color-s-blue);
+}
+.article{
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    gap: 1rem;
+}
+.article h1{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--color-s-gray);
+}
+.new--item+.new--item{
+    border-top: 1px solid var(--color-s-gray);
+}
+.img-container{
+    height: 15rem;
+    background-image:url('./assets/images/image-web-3-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+}
+@media screen and (min-width:641px){}
+     .menu{
+        display: flex;
+     }
+@media screen and (max-width:640px){
+    .menu{
+       display: none;
+       position: absolute;
+       outline: 2px solid green;
+       top:0;
+       right: 0;
+       background:var(--color-s-white);
+       width: 80vw;
+       height: 100vh;
+       align-items: revert;
+       justify-content: revert !important;
+       padding: 2rem;
+        
+    }
+    .close-icon{
+        align-self: flex-end;
+        
+    }
+    .menu li a{
+        color: var(--color-s-blue);
+    }
+    .margin__bottom{
+        margin-bottom: 2rem;
+    }
+    
+.img-container{
+   
+    background-image:url('./assets/images/image-web-3-mobile.jpg');
+   
+}
+}

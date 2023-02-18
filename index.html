@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/dist/output.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg__white">
+     <header role="navigation">
+       <div class="container w-11/12 sm:w-10/12 mx-auto">
+         <nav class="flex items-center justify-between py-4">
+          <img src="./assets/images/logo.svg" alt="" class="logo m:hidden w-10">
+          <div class=" nav--menu right   sm:flex items-center justify-evenly">
+              <img src="./assets/images/icon-menu.svg" alt="" class="menu-icon sm:hidden w-10 " id="menuIcon">
+              <ul class=" menu sm:flex sm:static flex-col sm:flex-row sm:items-center justify-around gap-4" id="menu">
+                <img src="./assets/images/icon-menu-close.svg" alt="" class="close-icon sm:hidden w-8 " id="closeIcon">
+                <li class="list-none">
+                    <a href="#" class="no-underline text-lg text__light hover__red"> Home</a>
+                </li>
+                <li class="list-none">
+                    <a href="#" class="no-underline text-lg text__light hover__red">New</a>
+                </li>
+                <li class="list-none">
+                    <a href="#" class="no-underline text-lg text__light hover__red">Popular</a>
+                </li>
+                <li class="list-none">
+                    <a href="#" class="no-underline text-lg text__light hover__red">Trending</a>
+                </li>
+                <li class="list-none">
+                    <a href="#" class="no-underline text-lg text__light hover__red">Categories</a>
+                 </li>
+              </ul>
+          </div>
+         
+         </nav>
+       </div>
+     </header>
+     <main role="main">
+      <div class="container w-11/12  sm:w-10/12 sm:grid grid-cols-1 sm:grid-cols-3 mx-auto gap-8">
+        <div class="img-box margin__bottom col-span-2 col-start-1 sm:grid grid-cols-1 sm:grid-cols-2">
+          <div class="img-container col-start-1 col-span-2 bg-black">
+           
+          </div>
+          <div class="heading w-fit col-start-1 col-span-1 " role="heading">
+             <h1 class="text__blue font-extrabold text-5xl mt-4">The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="decription col-span-1 col-start-2">
+            <p class="text__light my-4">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?</p>
+            
+            <a href="#" class="btn cursor-pointer flex items-center justify-center py-2 w-1/2 bg__red">
+              <span class="text-white">Read more</span>
+            </a>
+          </div>
+         </div>
+        <div class="new-items margin__bottom sm:col-start-3 col-span-1 flex items-start flex-col bg__blue p-4">
+          <h1 class="text__orange font-extrabold text-3xl mb-4"> New </h1>
+          <div class="new--items w-full">
+            <div class="new--item py-4 ">
+                <h2 class="text-white hover__orange cursor-pointer font-bold text-lg pb-2">Hydrogen VS Electric Cars</h2>
+                <p class="text__light">
+                  Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <div class="new--item py-4">
+              <h2 class="text-white hover__orange cursor-pointer font-bold text-lg pb-2">The Downsides of AI Artistry</h2>
+              <p class="text__light">
+                What are the possible adverse effects of on-demand AI image generation?</p>
+            </div>
+
+            <div class="new--item py-4">
+              <h2 class="text-white hover__orange cursor-pointer font-bold text-lg  pb-2">Is VC Funding Drying Up?</h2>
+              <p class="text__light">
+                Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+          </div>
+        </div>
+        <div class="articles gap-2 col-start-1 col-end-4 flex items-center justify-around flex-col sm:flex-row">
+          <div class="article">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="" class="img h-full">
+            <div class="article-text ">
+              <h1 class="text__gray "> 01</h1>
+              <h2 class="text__blue  hover__red cursor-pointer font-bold text-lg">Reviving Retro PCs</h2>
+              <p class="text__light"> What happens when old PCs are given modern upgrades?</p>
+            </div>
+           </div>
+           <div class="article">
+            <img src="./assets/images/image-top-laptops.jpg" alt="" class="img h-full">
+            <div class="article-text">
+              <h1 class="text__gray ">02</h1>
+              <h2 class="text__blue hover__red cursor-pointer font-bold text-lg">Top 10 Laptops of 2022</h2>
+              <p class="text__light">Our best picks for various needs and budgets.</p>
+            </div>
+           </div>
+           <div class="article">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="" class="img h-full">
+            <div class="article-text">
+              <h1 class="text__gray "> 03</h1>
+              <h2 class="text__blue hover__red cursor-pointer font-bold text-lg">The Growth of Gaming</h2>
+              <p class="text__light"> 
+                How the pandemic has sparked fresh opportunities.
+                </p>
+            </div>
+           </div>
+        </div>
+      </div>
+
+     </main>
+ 
+  
+ 
+
+  
+  
+  
+
+ 
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+<!-- ----------------------js---------------------------- -->
+<script>
+  let menuIcon =document.getElementById('menuIcon');
+  let closeIcon =document.getElementById('closeIcon');
+  let menu = document.getElementById('menu');
+
+  menuIcon.addEventListener('click',()=>{
+     menu.style.display='flex';
+  });
+  closeIcon.addEventListener('click',()=>{
+     menu.style.display='none';
+  });
+</script>
+
+</body>
+</html>
