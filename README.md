@@ -23,8 +23,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL:https://github.com/ssenyondo67/product-preview-card
-- Live Site URL: https://product-preview-card-two-ochre.vercel.app/
+- Solution URL:https://github.com/ssenyondo67/news-homepage-main
+- Live Site URL: https://news-homepage-main-orpin.vercel.app/
 
 ## My process
 
